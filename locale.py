@@ -61,7 +61,7 @@ class LocaleCommand(sublime_plugin.TextCommand):
             self.view.erase_status('sublime_locale')
             return
 
-        s = "Locale: %s" % locale
+        s = "Editing %s" % locale
         self.view.set_status('sublime_locale', s)
 
     def current_scope(self):
